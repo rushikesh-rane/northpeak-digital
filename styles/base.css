@@ -1,0 +1,34 @@
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*used for focusing when user clicks tab key*/
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+
+
+/*Improve text selection*/
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}

@@ -1,0 +1,20 @@
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+section {
+  padding-block: var(--space-2xl);
+}
+
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
