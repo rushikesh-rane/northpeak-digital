@@ -5,7 +5,7 @@ header {
 
   width: 100%;
 
-  background-color: var(--color-background);
+ background: rgba(var(--color-background-rgb), 0.75);
   border-bottom: 1px solid var(--color-border);
   z-index: 1000;
   backdrop-filter: blur(12px);
@@ -522,4 +522,96 @@ header .container {
 
 .hero-image:hover .floating-right {
   transform: rotate(7deg) translateY(-10px);
+}
+
+.trusted  {
+
+ padding:  0 4rem;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+   
+    margin-bottom: var(--space-2xl);
+
+    padding: .45rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(139,92,246,.12);
+
+    color: var(--color-primary);
+
+    font-size: 1.85rem;
+    font-weight: 600;
+}
+
+.trusted h2 {
+    max-width: 18ch;
+
+    margin: 0 auto var(--space-2xl);
+
+    font-size: 3.5rem;
+
+    line-height: 1.2;
+}
+
+.trusted h2 span {
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.trusted-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-lg);
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.brand-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90px;
+
+    background: transparent;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    color: var(--color-text-muted);
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    transition:
+        transform var(--transition-normal),
+        border-color var(--transition-normal),
+        color var(--transition-normal);
+}
+
+.brand-card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--color-primary);
+
+    color: var(--color-text);
+
+    background: rgba(139,92,246,.06);
 }
