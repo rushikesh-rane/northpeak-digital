@@ -30,3 +30,16 @@
   transform: translateY(0);
 }
 
+.form-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-message.error {
+    color: #ef4444;
+}
+
+.form-message.success {
+    color: #22c55e;
+}
