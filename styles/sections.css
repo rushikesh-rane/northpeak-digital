@@ -680,7 +680,7 @@ header .container {
 }
 
 .service-link {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 
   text-decoration: none;
 
@@ -737,7 +737,7 @@ header .container {
   align-items: center;
   gap: .5rem;
 
-  color: var(--color-primary);
+  color: var(--color-secondary);
 
   font-weight: 600;
 
@@ -1483,7 +1483,7 @@ header .container {
 }
 
 .footer-credit a {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 
   font-weight: 600;
 }
