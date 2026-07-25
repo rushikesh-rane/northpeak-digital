@@ -64,3 +64,7 @@ https://github.com/rushikesh-rane/northpeak-digital
 ## Acknowledgements
 
 Built for the **Digital Heroes Internship Qualification Task**.
+
+## AI Usage
+
+I used ChatGPT as a development assistant throughout this assignment to help clarify implementation approaches, explain JavaScript concepts, troubleshoot bugs, and review sections of my code when I was stuck. It was also used to discuss possible improvements and validate my understanding of certain topics. All major design decisions, project structure, implementation, debugging, testing, and the final solution were completed and verified by me.
