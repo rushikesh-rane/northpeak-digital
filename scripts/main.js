@@ -1,5 +1,5 @@
 const contactForm = document.querySelector(".contact-form");
-console.log(contactForm);
+
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const messageInput = document.querySelector("#message");
@@ -38,12 +38,28 @@ contactForm.addEventListener("submit", (event) => {
     return;
   }
 
-  else {
-    formMessage.className = "form-message success";
-    formMessage.textContent = "Message sent successfully!";
 
-  }
 
+  const submission = {
+    name,
+    email,
+    message
+  };
+
+  formMessage.className = "form-message success";
+  formMessage.textContent = "Message sent successfully!";
+
+
+  saveSubmission(submission);
 
   contactForm.reset();
 });
+
+
+function saveSubmission(submission) {
+  const submissions = JSON.parse(localStorage.getItem("submissions")) || [];
+
+  submissions.push(submission);
+
+  localStorage.setItem("submissions", JSON.stringify(submissions));
+}
